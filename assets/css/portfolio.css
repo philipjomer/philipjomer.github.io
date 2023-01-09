@@ -72,11 +72,12 @@ a:hover {
 }
 
 #switch {
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 30px;
   cursor: pointer;
   color: var(--text1);
 }
+
 
 #switch:hover {
   color: var(--text2);
