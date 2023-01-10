@@ -352,7 +352,7 @@
   });
 })();
 
-
+//clock
 function updateClock() {
   var currentTime = new Date();
   var hours = currentTime.getHours();
@@ -378,7 +378,7 @@ function updateClock() {
   }
 
   var timeString =
-    day + "-" + month + "-" + year + " " + hours + ":" + minutes + ":" + ampm;
+    month + "/" + day + "/" + year + " " + hours + ":" + minutes + ":" + ampm;
   document.querySelector(".time").innerHTML = timeString;
 }
 
