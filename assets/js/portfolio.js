@@ -353,26 +353,34 @@
 })();
 
 
-//clock
- function updateClock() {
-   var currentTime = new Date();
-   var hours = currentTime.getHours();
-   var minutes = currentTime.getMinutes();
-   
-   var ampm = "AM";
-   if (hours > 12) {
-     hours -= 12;
-     ampm = "PM";
-   }
+function updateClock() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var day = currentTime.getDate();
+  var month = currentTime.getMonth() + 1; // returns a number between 1 and 12
+  var year = currentTime.getFullYear();
 
-   // Add a leading zero to the minutes if it is less than 10
-   if (minutes < 10) {
-     minutes = "0" + minutes;
-   }
+  var ampm = "AM";
+  if (hours > 12) {
+    hours -= 12;
+    ampm = "PM";
+  }
 
+  // Add a leading zero to the minutes if it is less than 10
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
 
-   var timeString = hours + ":" + minutes + ":"+ ampm;
-   document.querySelector(".time").innerHTML = timeString;
- }
+  // Add a leading zero to the month if it is less than 10
+  if (month < 10) {
+    month = "0" + month;
+  }
 
- setInterval(updateClock, 1000);
+  var timeString =
+    day + "-" + month + "-" + year + " " + hours + ":" + minutes + ":" + ampm;
+  document.querySelector(".time").innerHTML = timeString;
+}
+
+setInterval(updateClock, 1000);
+
