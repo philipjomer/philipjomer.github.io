@@ -23,23 +23,23 @@ html {
   --font2: 'Seymour One', sans-serif;
   --font3: 'Nova Flat', cursive;
   --text1: #02ee9b;
-  --text2: crimson;
+  --text2: #635bff;
   --text3: #161414;
   --text4: #ffffff;
-  --bg2: #bce5ef;
-  --bg1: #3a87a4;
+  --bg2: #ffffea;
+  --bg1: #327296;
   --background: #121213;
   --progress: #CC33CC;
   --progrez: #1ed75f88;
 }
 
 .dark-mode {
-  --text1: crimson;
+  --text1: #635bff;
   --text2: #02ee9b;
   --text3: #ffffff;
   --text4: #000000;
-  --bg1: #25273c;
-  --bg2: #1c1c1c;
+  --bg1: #0a2540;
+  --bg2: #282828;
   --background: #0606ec;
   --progress: #F92C85;
   --progrez: #ffee327c;
@@ -638,7 +638,7 @@ body {
 #hero h5 {
   transition: color 0.7s ease-in-out;
   font-family: var(--font3);
-  font-size: clamp(0.9375rem, 0.6505rem + 1.2245vw, 1.875rem);
+  font-size: clamp(0.9375rem, 0.6505rem + 1.2245vw, 1.365rem);
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 1px var(--bg1),
     1px 2px 1px var(--bg1),
@@ -814,20 +814,21 @@ section {
 .section-title h2 {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out;
-  text-shadow: 1px 1px 1px var(--bg1),
-    1px 2px 1px var(--bg1),
-    1px 3px 1px var(--bg1),
-    1px 4px 1px var(--bg1),
-    1px 5px 1px var(--bg1),
-    1px 6px 1px var(--bg1),
-    1px 7px 1px var(--bg1),
-    1px 8px 1px var(--bg1),
-    1px 9px 1px var(--bg1),
-    1px 10px 1px var(--bg1),
-    1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2),
-    1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px var(--bg1),
+      1px 2px 1px var(--bg1),
+      1px 3px 1px var(--bg1),
+      1px 4px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 5px 1px var(--bg1),
+      1px 12px 3px rgba(16, 16, 16, 0.4),
+      1px 16px 5px rgba(16, 16, 16, 0.2),
+      1px 20px 15px rgba(16, 16, 16, 0.2),
+      1px 25px 30px rgba(16, 16, 16, 0.4);
   font-family: var(--font2);
   font-size: 40px;
   font-weight: bold;
@@ -870,10 +871,10 @@ section {
 .bankai {
   margin-left: 5%;
   width: 90%;
-  background-color: var(--bg1);
-  padding: 40px;
+  background-color: var(--bg2);
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  /* box-shadow: 0px 10px 30px rgb(0 0 0 / 50%); */
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -896,23 +897,24 @@ span.typing {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   transition: color 0.5s ease-in-out;
   color: var(--text1);
+  margin-bottom: 2px;
   font-size: 30px;
   font-weight: 900;
   font-family: var(--font2);
-  text-shadow: 1px 1px 1px var(--bg1),
-    1px 2px 1px var(--bg1),
-    1px 3px 1px var(--bg1),
-    1px 4px 1px var(--bg1),
-    1px 5px 1px var(--bg1),
-    1px 6px 1px var(--bg1),
-    1px 7px 1px var(--bg1),
-    1px 8px 1px var(--bg1),
-    1px 9px 1px var(--bg1),
-    1px 10px 1px var(--bg1),
-    1px 18px 6px rgba(16, 16, 16, 0.4),
-    1px 22px 10px rgba(16, 16, 16, 0.2),
-    1px 25px 35px rgba(16, 16, 16, 0.2),
-    1px 30px 60px rgba(16, 16, 16, 0.4);
+  text-shadow: 1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 0px 1px var(--bg1), 
+  1px 1px 1px var(--bg1), 
+  1px 5px 1px var(--bg1), 
+  1px 12px 4px rgba(16, 16, 16, 0.4),
+  1px 11px 20px rgba(16, 16, 16, 0.2), 
+  1px 15px 15px rgba(16, 16, 16, 0.2), 
+  1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .why-us .content h4 {
@@ -951,7 +953,7 @@ span.typing {
 .why-us .accordion-list li {
   transition: background-color 0.5s ease-in-out;
   padding: 20px;
-  background: var(--bg2);
+  background: var(--bg1);
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
 }
@@ -983,7 +985,7 @@ span.typing {
 .why-us .accordion-list i {
   transition: background-color 0.5s ease-in-out;
   font-size: 24px;
-  background-color: var(--bg1);
+  background-color: var(--bg2);
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -1128,7 +1130,7 @@ h2.progres {
 
 .skills .progress-bar-wrap {
   transition: background-color 0.5s ease-in-out;
-  background: var(--bg2);
+  background: var(--text2);
   height: 10px;
   border-radius: 10px;
   margin-left: 1%;
