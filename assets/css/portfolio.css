@@ -761,6 +761,55 @@ body {
     transform: translateY(-5px);
   }
 }
+/*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+.featured-services .service-item {
+  border-radius: 10px;
+  padding: 20px;
+  transition: all ease-in-out 0.4s;
+  background: var(--bg1);
+  height: 100%;
+}
+
+.featured-services .service-item .icon {
+  margin-bottom: 10px;
+}
+
+.featured-services .service-item .icon i {
+  transition: color 0.7s ease-in-out;
+  text-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  color: var(--text1);
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.featured-services .service-item h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.featured-services .service-item h4 a {
+  text-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  color: var(--text1);
+  transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item p {
+  transition: color 0.7s ease-in-out;
+  text-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+  color: var(--text3);
+  font-family: var(--font);
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.featured-services .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 50%);
+}
 
 
 #clock {
@@ -788,8 +837,9 @@ body {
     1px 25px 30px rgba(16, 16, 16, 0.4);
 }
 
-
-
+#featured-services {
+  background: transparent;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
