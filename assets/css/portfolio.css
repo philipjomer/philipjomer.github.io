@@ -26,7 +26,7 @@ html {
   --text2: #635bff;
   --text3: #161414;
   --text4: #ffffff;
-  --bg2: #ffffea;
+  --bg2: #EEEEEE;
   --bg1: #79afe5;
   --background: #121213;
   --progress: #CC33CC;
@@ -1888,8 +1888,6 @@ iframe {
   font-weight: 700;
   position: relative;
   font-family: var(--font2);
-  padding: 0;
-  margin: 0 0 15px 0;
   transition: color 0.5s ease-in-out;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 1px var(--bg1),
@@ -1914,8 +1912,6 @@ iframe {
   font-size: 15px;
   font-style: italic;
   font-weight: 600;
-  padding: 0;
-  margin: 0 0 20px 0;
   transition: color 0.5s ease-in-out;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -1931,11 +1927,10 @@ iframe {
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
   border-radius: 20%;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 40%;
   transition: 0.3s;
 }
 a.facebook {
@@ -1959,7 +1954,6 @@ a.instagram{
 #footer .copyright {
   transition: color 0.5s ease-in-out;
   color: var(--text3);
-  margin: 0 0 5px 0;
 }
 #footer .copyright strong{
   color: crimson;
@@ -1968,4 +1962,12 @@ a.instagram{
 #footer .credits {
   color: var(--text3);
   font-size: 13px;
+}
+.containers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
 }
